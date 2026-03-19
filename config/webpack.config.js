@@ -5,7 +5,7 @@ const path = require('path');
 const webpack = require('webpack');
 const resolve = require('resolve');
 const CopyPlugin = require('copy-webpack-plugin');
-const LicensePlugin = require('license-webpack-plugin').LicenseWebpackPlugin;
+// const LicensePlugin = require('license-webpack-plugin').LicenseWebpackPlugin;
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -592,7 +592,7 @@ module.exports = function (webpackEnv) {
         outDirectory: pyodideStaticPath,
         packageIndexUrl: '',
       }),
-      new LicensePlugin(require('./licenses')),
+      // new LicensePlugin(require('./licenses')),
       new MonacoWebpackPlugin({
         languages: ['python'],
         filename: 'static/js/[name].worker.[contenthash].js',
