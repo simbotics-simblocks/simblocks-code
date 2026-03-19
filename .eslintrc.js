@@ -28,6 +28,7 @@ module.exports = {
         'import/order': ['error', { alphabetize: { order: 'asc' } }],
         'react-hooks/exhaustive-deps': 'error',
         'react/jsx-no-target-blank': ['error', { allowReferrer: true }],
+        'prettier/prettier': ['error', { endOfLine: 'auto' }],
     },
     settings: {
         react: { version: 'detect' },
